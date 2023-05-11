@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Dictionnary.css';
+import './Dictionary.css';
 
-const Dictionnary = () => {
+const Dictionary = () => {
   const [search, setSearch] = useState('');
   const [research, setResearch] = useState({});
 
@@ -18,8 +18,8 @@ const Dictionnary = () => {
   };
 
   return (
-    <div className='dictionnary'>
-      <form className='dictionnary-form' onSubmit={submit}>
+    <div className='dictionary'>
+      <form className='dictionary-form' onSubmit={submit}>
         <input
           className='input'
           type='text'
@@ -39,4 +39,4 @@ const Dictionnary = () => {
   );
 };
 
-export default Dictionnary;
+export default Dictionary;

@@ -1,4 +1,4 @@
-.dictionnary {
+.dictionary {
   width: 40%;
   height: 30%;
   display: flex;
@@ -9,7 +9,7 @@
   border-radius: 25px;
 }
 
-.dictionnary-form {
+.dictionary-form {
   width: 70%;
   height: 20%;
   margin: auto;
