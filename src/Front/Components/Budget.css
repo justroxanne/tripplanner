@@ -1,43 +1,60 @@
-.container-budget{
-    /* width: 100%; */
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 65%);
-    border-radius: 25px 25px 0 0;
-    padding-left: 5%;
+.container-budget {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 65%);
+  border-radius: 25px 25px 0 0;
 }
 
-.total{
-    height: 100%;
-    width: 20%;
+.countCalc {
+  display: flex;
+  width: 10s0%;
+  height: 20%;
 }
 
-.Ajout-Soustraire{
-    height: 100%;
-    width: 20%;
+.forwhat {
+  width: 60%;
 }
-.container-button{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+
+.amount {
+  width: 25%;
 }
- button{
-    margin: 2px;
-    border: none;
-    background: none;
+
+.total {
+  width: 20%;
 }
-.container-reset{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:12% ;
+
+.container-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.reset{
-    background-color: var(--main-color);
-    color: #666666;
-    border-radius: 12px;
-    width: 40%;
-    height:100%;
+
+button {
+  margin: 2px;
+  border: none;
+  background: none;
+}
+
+.expense-history {
+  width: 100%;
+  height: 30%;
+  overflow: scroll;
+}
+
+.container-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12%;
+}
+.reset {
+  background-color: var(--main-color);
+  color: #666666;
+  border-radius: 12px;
+  width: 20%;
+  height: 100%;
+  margin-left: 2em;
 }
