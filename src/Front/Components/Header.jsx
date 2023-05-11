@@ -1,10 +1,19 @@
 import React from 'react';
-import "./Header.css";
+import picture from '../assets/Profil.jpg';
+import { useState } from 'react';
+import './Header.css';
 
 const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+  const [user, setUser] = useState();
 
-export default Header
+  return (
+    <header>
+      <p>Hi, Ptbambie!</p>
+      <div className='photo-container'>
+        <img src={picture} alt='Profil'></img>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
