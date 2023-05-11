@@ -84,6 +84,10 @@ footer {
   font-size: 0.75em;
 }
 
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none;
+}
+
 .react-calendar__month-view__weekdays__weekday {
   padding: 0.5em;
 }
