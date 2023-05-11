@@ -1,18 +1,12 @@
-import './App.css'
+import './App.css';
+import Footer from './Front/Components/Footer';
 
 function App() {
-
   return (
-    <div className="app">
-      <h1>
-        Trip planner
-      </h1>
-      <div style={{height: "100%"}}>
-        <div style={{backgroundColor: "var(--main-color)", height: "40%"}}></div>
-        <div style={{backgroundColor: "var(--second-color)", height: "40%"}}></div>
-      </div>
+    <div className='app'>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
