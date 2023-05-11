@@ -1,10 +1,15 @@
-import React from 'react';
-import "./Footer.css";
+import React, { useState } from 'react';
+import './Footer.css';
+import Calendar from 'react-calendar';
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  const [value, onChange] = useState(new Date());
 
-export default Footer
+  return (
+    <footer>
+      <Calendar onChange={onChange} value={value} />
+    </footer>
+  );
+};
+
+export default Footer;

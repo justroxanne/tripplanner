@@ -1,13 +1,22 @@
 import Header from './Front/Components/Header'
-import './App.css'
+import Footer from './Front/Components/Footer';
+import Budget from './Front/Components/Budget';
+import Dictionary from './Front/Components/Dictionary';
+import Currencies from './Front/Components/Currencies';
+import './App.css';
+
+
 
 function App() {
-
   return (
-    <div className="app">
-        <Header/>
+    <div className='app'>
+      <Header />
+      <Dictionary />
+      <Budget />
+      <Currencies />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

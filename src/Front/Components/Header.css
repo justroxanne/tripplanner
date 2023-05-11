@@ -1,18 +1,24 @@
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh;;
-    background-color:white;
-    box-shadow: 2px 2px 20px #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh;
+  background-color: white;
+  box-shadow: 2px 2px 20px #dedede;
+  height: 7%;
 }
-header p{
-    font-family: var(--main-font);
-    color: #666666;
+
+header p {
+  font-family: var(--main-font);
+  color: #666666;
+}
+
+.photo-container {
+  height: 100%;
 }
 
 header img {
- width: 20%;
- border-radius: 250px;
+  height: 100%;
+  width: 100%;
+  border-radius: 250px;
 }
