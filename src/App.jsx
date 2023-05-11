@@ -1,12 +1,12 @@
+import Header from './Front/Components/Header'
 import './App.css'
 
 function App() {
 
   return (
-    <><h1>
-      Trip planner
-    </h1>
-    </>
+    <div className="app">
+        <Header/>
+    </div>
   )
 }
 
