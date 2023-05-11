@@ -18,6 +18,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url(../src/Front/assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: var(--main-font);
 }
 
 h1 {
