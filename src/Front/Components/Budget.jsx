@@ -5,6 +5,7 @@ import "./Budget.css"
 const Budget = () => {
   const [budgetAmount, setBudgetAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
+  const [expenses, setExpenses] = useState([]);
 
   const handleDecrement = () => {
     if (budgetAmount - totalAmount < 0) {
@@ -13,16 +14,19 @@ const Budget = () => {
     }
     setBudgetAmount(budgetAmount - totalAmount);
     setTotalAmount(0);
+    setExpenses([...expenses, -totalAmount]);
   }
 
   const handleIncrement = () => {
     setBudgetAmount(budgetAmount + totalAmount);
     setTotalAmount(0);
+    setExpenses([...expenses, totalAmount]);
   }
 
   const handleReset = () => {
     setBudgetAmount(0);
     setTotalAmount(0);
+    setExpenses([]);
   }
 
   return (<>
@@ -46,6 +50,16 @@ const Budget = () => {
         <button onClick={handleIncrement}><SlPlus style={{color:'#666666'}}/></button>
         <button onClick={handleDecrement}><SlMinus style={{color:'#666666'}}/></button>
       </p>
+      <div>
+        <h3>Expense history:</h3>
+        {expenses.length === 0 ? <p>Aucune dépense enregistrée.</p> : (
+          <ul>
+            {expenses.map((expense, index) => (
+              <li key={index}>{expense > 0 ? "+" : ""}{expense} €</li>
+            ))}
+          </ul>
+        )}
+      </div>
       <div className='container-reset'>
         <button className='reset'onClick={handleReset}>Reset</button>
       </div>
