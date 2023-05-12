@@ -40,7 +40,7 @@ const Budget = () => {
         <p>{budgetAmount}€</p>
         <div className='countCalc'>
           <input
-            className='amount'
+            className='amount-input'
             type='number'
             value={totalAmount}
             onChange={(e) => setTotalAmount(e.target.value)}

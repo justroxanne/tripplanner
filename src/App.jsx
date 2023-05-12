@@ -7,7 +7,6 @@ import Login from './Front/Components/Login';
 import Currencies from './Front/Components/Currencies';
 import './App.css';
 
-
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -17,15 +16,12 @@ function App() {
 
   return (
     <div className='app'>
-
       {isVisible && <Login handleSubmit={handleSubmit} />}
       <Header handleSubmit={handleSubmit} />
       <div className='converters'>
         <Dictionary />
+        <Currencies />
       </div>
-      <Header />
-      <Dictionary />
-      <Currencies />
       <Budget />
       <Footer />
     </div>

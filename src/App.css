@@ -20,18 +20,27 @@
   display: flex;
   flex-direction: column;
   background-image: url(../src/Front/assets/background.jpg);
-  background-position: right;
+  background-size: cover;
+  background-position: center;
   font-family: var(--main-font);
   position: relative;
 }
 
 .converters {
   width: 100%;
-  height: 30%;
+  height: 35%;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 h1 {
   font-family: var(--title-font);
+  font-size: 1.5em;
+  color: var(--second-color);
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--title-color);
 }
