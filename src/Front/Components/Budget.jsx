@@ -10,7 +10,7 @@ const Budget = () => {
 
   const handleDecrement = () => {
     if (budgetAmount - totalAmount < 0) {
-      alert('Le montant soustrait est supérieur au budget restant.');
+      alert("You don't have enought cash!");
       return;
     }
     setBudgetAmount(budgetAmount - totalAmount);
@@ -34,10 +34,10 @@ const Budget = () => {
   };
 
   return (
-    <>
+    <div className='budget'>
       <div className='container-budget'>
         <h2>Budget</h2>
-        <p>Total Budget : {budgetAmount} €</p>
+        <p>{budgetAmount}€</p>
         <div className='countCalc'>
           <input
             className='amount'
@@ -45,12 +45,6 @@ const Budget = () => {
             value={totalAmount}
             onChange={(e) => setTotalAmount(e.target.value)}
           />
-          <button onClick={handleIncrement}>
-            <SlPlus style={{ color: '#666666' }} />
-          </button>
-          <button onClick={handleDecrement}>
-            <SlMinus style={{ color: '#666666' }} />
-          </button>
           <input
             className='forwhat'
             type='text'
@@ -58,6 +52,16 @@ const Budget = () => {
             placeholder='For What?'
             onChange={(e) => setExpenseName(e.target.value)}
           />
+          <button className='budget-btn' onClick={handleDecrement}>
+            <SlMinus
+              style={{ width: '100%', height: '100%', color: '#666666' }}
+            />
+          </button>
+          <button className='budget-btn' onClick={handleIncrement}>
+            <SlPlus
+              style={{ width: '100%', height: '100%', color: '#666666' }}
+            />
+          </button>
           <button className='reset' onClick={handleReset}>
             Reset
           </button>
@@ -65,7 +69,7 @@ const Budget = () => {
         <div className='expense-history'>
           <h3>Expense history:</h3>
           {expenses.length === 0 ? (
-            <p>Aucune dépense enregistrée.</p>
+            <p>No expenses recorded</p>
           ) : (
             <ul>
               {expenses
@@ -81,7 +85,7 @@ const Budget = () => {
         </div>
       </div>
       <div className='container-button'></div>
-    </>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@
   --main-color: #feff86;
   --second-color: #21e3ea;
   --third-color: #befcfe;
+  --title-color: #154eb0;
   --main-font: 'Inter';
   --title-font: 'Wix Madefor Text';
 }
@@ -19,9 +20,16 @@
   display: flex;
   flex-direction: column;
   background-image: url(../src/Front/assets/background.jpg);
-  background-size: cover;
-  background-position: center;
+  background-position: right;
   font-family: var(--main-font);
+  position: relative;
+}
+
+.converters {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
