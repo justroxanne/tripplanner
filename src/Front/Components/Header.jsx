@@ -3,13 +3,14 @@ import picture from '../assets/Profil.jpg';
 import { useState } from 'react';
 import './Header.css';
 
-const Header = ({handleSubmit}) => {
-
-  const logOut = () => 
+const Header = ({ handleSubmit }) => {
+  const logOut = () => {
+    handleSubmit();
+  };
 
   return (
     <header>
-      <p>Hi, Ptbambie!</p>
+      <h1>Hi, Ptbambie!</h1>
       <div className='photo-container'>
         <img src={picture} alt='Profil'></img>
       </div>

@@ -19,6 +19,7 @@ const Dictionary = () => {
 
   return (
     <div className='dictionary'>
+      <h2>Dictionary</h2>
       <form className='dictionary-form' onSubmit={submit}>
         <input
           className='input'
