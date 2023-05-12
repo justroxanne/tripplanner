@@ -11,8 +11,8 @@ function App() {
     <div className='app'>
       <Header />
       <Dictionary />
-      <Budget />
       <Currencies />
+      <Budget />
       <Footer />
     </div>
   );
