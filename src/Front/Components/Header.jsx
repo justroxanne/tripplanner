@@ -3,8 +3,9 @@ import picture from '../assets/Profil.jpg';
 import { useState } from 'react';
 import './Header.css';
 
-const Header = () => {
-  const [user, setUser] = useState();
+const Header = ({handleSubmit}) => {
+
+  const logOut = () => 
 
   return (
     <header>
