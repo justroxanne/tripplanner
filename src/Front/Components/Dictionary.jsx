@@ -19,6 +19,7 @@ const Dictionary = () => {
 
   return (
     <div className='dictionary'>
+      <h2>Dictionary</h2>
       <form className='dictionary-form' onSubmit={submit}>
         <input
           className='input'
@@ -27,7 +28,7 @@ const Dictionary = () => {
           onChange={(e) => {
             setSearch(e.target.value);
           }}
-          placeholder='What do you want to say ?'
+          placeholder='Mute ?'
         />
       </form>
       <div className='result'>

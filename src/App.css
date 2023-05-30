@@ -4,6 +4,7 @@
   --main-color: #feff86;
   --second-color: #21e3ea;
   --third-color: #befcfe;
+  --title-color: #154eb0;
   --main-font: 'Inter';
   --title-font: 'Wix Madefor Text';
 }
@@ -22,8 +23,24 @@
   background-size: cover;
   background-position: center;
   font-family: var(--main-font);
+  position: relative;
+}
+
+.converters {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 h1 {
   font-family: var(--title-font);
+  font-size: 1.5em;
+  color: var(--second-color);
+}
+
+h2 {
+  font-family: var(--title-font);
+  color: var(--title-color);
 }
