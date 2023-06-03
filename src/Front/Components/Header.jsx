@@ -3,11 +3,7 @@ import picture from '../assets/Profil.jpg';
 import { useState } from 'react';
 import './Header.css';
 
-const Header = ({ handleSubmit }) => {
-  const logOut = () => {
-    handleSubmit();
-  };
-
+const Header = () => {
   return (
     <header>
       <h1>Hi, Ptbambie!</h1>
