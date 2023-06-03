@@ -70,7 +70,7 @@ const Currencies = () => {
           ))}
         </select>
         <p>
-          Budget in {currency}: {converted.toFixed(2)}€
+          Budget in {currency}: {converted.toFixed(2)}
         </p>
       </div>
     </div>
